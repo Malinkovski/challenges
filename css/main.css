@@ -23,45 +23,104 @@ img {
 
 body {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 100;
   line-height: 1.5;
-  color: #a0a0ac;
+  color: #505050;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  margin-bottom: 0.9375rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
 }
 
-p {
-  margin: 12px 0;
+h1 {
+  font-size: 40px;
 }
 
-span {
-  color: #e65f78;
+p {
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
-  color: #e65f78;
+  color: #ffffff;
 }
 
 ul {
   list-style: none;
 }
 
-.social-icons {
-  border: #3d4044 2px solid;
-  border-radius: 100%;
-  padding: 10px;
-  width: 40px;
-  height: 40px;
+.banner .section {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner .header div {
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #37a0f3;
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+  background: url("../images/hero.jpg"), rgba(120, 120, 120, 0.5215686275);
+  background-blend-mode: exclusion;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.banner .section .nav-bar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .section ul {
+  display: flex;
+}
+.banner .section ul li:not(:first-child) {
+  margin-left: 10px;
+}
+@media (max-width: 320px) {
+  .banner .section ul li:not(:first-child) {
+    margin-left: 5px !important;
+  }
+}
+.banner .section ul li:not(:last-child) {
+  margin-right: 10px;
+}
+@media (max-width: 320px) {
+  .banner .section ul li:not(:last-child) {
+    margin-right: 5px !important;
+  }
+}
+.banner h2 {
+  color: #ffffff;
+}
+.banner .header {
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
-  /* background-color: var.$background-color-tertiary; */
+}
+.banner .header h4 {
+  font-weight: 100;
+}
+@media (max-width: 425px) {
+  .banner .nav-bar {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

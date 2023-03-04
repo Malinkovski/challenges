@@ -60,7 +60,7 @@
   margin-right: auto;
 }
 
-%sub-header-wrap {
+%wrap-40 {
   width: 40%;
   margin-left: auto;
   margin-right: auto;
@@ -70,4 +70,13 @@
     padding-left: math.div(var.$gutter-base, 2);
     padding-right: math.div(var.$gutter-base, 2);
   }
+}
+
+%btn{
+  text-transform: uppercase;
+  font-weight: var.$font-weight-bold;
+  background-color: var.$button-color-base;
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius: 5px;
 }

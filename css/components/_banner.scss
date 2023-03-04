@@ -2,6 +2,66 @@
 @use "../abstracts/variables" as var;
 @use "sass:math";
 
-.banner{
+.banner {
+    position: relative;
+    height: 100vh;
+    background: url("../images/hero.jpg"), #78787885;
+    background-blend-mode: exclusion;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  .section {
     @extend %wrap;
+    .nav-bar{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+    justify-content: space-between;
 }
+        ul{
+            display: flex;
+            li{
+                &:not(:first-child){
+                    margin-left: 10px;
+                    @include mix.mobile-s-styles{
+                        margin-left: 5px !important;
+                    }
+                }
+                &:not(:last-child){
+                    margin-right: 10px;
+                    @include mix.mobile-s-styles{
+                        margin-right: 5px !important;
+                    }
+                }
+            }
+        }
+    }
+    h2 {
+      color: var.$text-color-header;
+    }
+    .header{
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        h4{
+            font-weight: var.$font-weight-normal;
+        }
+        div{
+            @extend %btn;
+        }
+    }
+    @include mix.mobile-l-styles{
+        .nav-bar{
+            flex-direction: column;
+            @include mix.mobile-l-styles{
+
+            }
+        }
+    }
+    
+  }
+
