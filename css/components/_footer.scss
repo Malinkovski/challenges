@@ -2,3 +2,44 @@
 @use "../abstracts/mixins" as mix;
 @use "sass:math";
 
+.footer{
+    p{
+        @extend %wrap;
+    }
+    background-color: var.$beckground-color-secondary;
+    color: var.$text-color-tertiary;
+    span{
+        color: var.$text-color-header;
+    }
+    text-transform: uppercase;
+    @extend %section;
+    text-align: center;
+    ul{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        li {
+            i:hover{
+            transition: ease-in-out 0.1s;
+            box-shadow: 0 0 18px 3px rgb(0 0 0 / 31%);
+            }
+            &:not(:first-child) {
+              margin-left: 12px;
+              @include mix.mobile-s-styles {
+                margin-left: 6px ;
+              }
+            }
+            &:not(:last-child) {
+              margin-right: 12px;
+              @include mix.mobile-s-styles {
+                margin-right: 6px;
+              }
+            }
+          }
+    }
+    i{
+
+        font-size: var.$font-size-icons;
+        color: var.$text-color-tertiary;
+    }
+}

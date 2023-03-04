@@ -78,6 +78,9 @@
   padding: 8px 30px;
   display: inline-block;
   border-radius: 5px;
+  &:hover{
+    box-shadow: 0 0 9px 4px var.$button-color-base;
+  }
 }
 
 %sub-header {

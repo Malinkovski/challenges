@@ -13,11 +13,11 @@
   </head>
   <body>
     <!-- banner -->
-    <section class="banner">
+    <section id="home" class="banner">
       <div class="section">
         <div class="nav-bar">
           <div>
-            <h2>Logo</h2>
+            <h2><a href="#home">Logo</a></h2>
           </div>
           <div>
             <ul>
@@ -31,12 +31,12 @@
         <div class="header">
           <h1>Responsive Template</h1>
           <h4>Learn flexbox easily.</h4>
-          <div><a href="#">i am a button</a></div>
+          <a href="#subscribe"><div>i am a button</div></a>
         </div>
       </div>
     </section>
 
-    <section class="main">
+    <section id="products" class="main">
       <!-- some of our work -->
       <div class="sub-header">
         <h2>Some Of Our Work</h2>
@@ -104,13 +104,52 @@
             voluptatum. Doloribus, eos tempore doloremque illo animi
           </p>
         </div>
-        <form action="">
+        <form id="subscribe" action="submit">
           <label for="email"></label>
-          <input type="email" id="email" name="email" placeholder="Email"/>
+          <input type="email" id="email" name="email" placeholder="Email" />
           <input type="button" value="SUBSCRIBE NOW" />
         </form>
       </div>
     </section>
     <!-- social-footer -->
+    <section class="footer">
+      <div>
+        <div>
+          <ul>
+            <li>
+              <a aria-label="social" href="#"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a aria-label="social" href="#"
+                ><i class="fa-brands fa-square-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a aria-label="social" href="#"
+                ><i class="fa-brands fa-square-snapchat"></i
+              ></a>
+            </li>
+            <li>
+              <a aria-label="social" href="#"
+                ><i class="fa-brands fa-square-pinterest"></i
+              ></a>
+            </li>
+            <li>
+              <a aria-label="social" href="#"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+            </li>
+          </ul>
+
+          <p>
+            made by <span>a website</span>. images courtesy to
+            <span>another website.</span>
+          </p>
+          <p>please do not google the code, try to do it yourself.</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

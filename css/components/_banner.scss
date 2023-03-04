@@ -22,6 +22,10 @@
     ul {
       display: flex;
       li {
+        a:hover{
+          transition: ease-in-out 0.2s;
+          color: var.$text-color-tertiary;
+          }
         &:not(:first-child) {
           margin-left: 10px;
           @include mix.mobile-s-styles {
