@@ -54,13 +54,19 @@
 }
 
 
-%wrap {
-  width: 80%;
+%wrap{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%sub-header-wrap {
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
 
   @include tablet-styles {
-    width: 100%;
+    width: 90%;
     padding-left: math.div(var.$gutter-base, 2);
     padding-right: math.div(var.$gutter-base, 2);
   }

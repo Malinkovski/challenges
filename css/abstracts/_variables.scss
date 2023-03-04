@@ -7,23 +7,23 @@
 // Font settings
 $font-family-base:          'Montserrat', sans-serif;
 
-$line-height-base:           1.5;
+$line-height-base:           2;
 
-$font-weight-normal:         400;
-$font-weight-bold:           700;
+$font-weight-normal:         100;
+$font-weight-bold:           900;
 
 // Size settings
 $gutter-base:                rem-calc(30);
 
 // Color settings
-$text-color-base:            #ffffff;
-$text-color-primary:         #a0a0ac;
-$text-color-secondary:       #e65f78;
-$text-color-tertiary:        #000000;
+$text-color-base:            #505050;
+$text-color-primary:         #1d1d1d;
+$text-color-secondary:       #37a0f3;
+$text-color-tertiary:        #aaaaaa;
 
-$background-color-base:      #2e3135;
-$background-color-primary:   #26282b;
-$beckground-color-secondary: #ffffff;
-$background-color-tertiary:  #3d4044;
+$background-color-base:      #ffffff;
+$background-color-primary:   #e9e9e9;
+$beckground-color-secondary: #414a4f;
+$background-color-tertiary:  #000000;
 
-$button-color-base:          #e65f78;
+$button-color-base:          #37a0f3;

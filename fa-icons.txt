@@ -1,12 +1,11 @@
 //social-icons
-<i class="fa-brands fa-dribbble"></i>   	= dribbble
-<i class="fa-brands fa-facebook-f"></i> 	= facebook
-<i class="fa-brands fa-linkedin-in"></i>	= linkedin
-<i class="fa-brands fa-twitter"></i>		= twitter
-<i class="fa-brands fa-pinterest-p"></i> 	= printerest
+<i class="fa-brands fa-square-twitter"></i>		= twitter
+<i class="fa-brands fa-square-facebook"></i> 	= facebook
+<i class="fa-brands fa-square-snapchat"></i>    = spanchat
+<i class="fa-brands fa-square-pinterest"></i> 	= printerest
+<i class="fa-brands fa-square-github"></i>   	= github
 
-//fixed bottom-right-button
-<i class="fa-solid fa-chevron-up"></i>		= chevron-up
-
-//burger menu
-<i class="fa-solid fa-bars"></i>            = bars
+//content
+<i class="fa-solid fa-camera-retro"></i>        = photography
+<i class="fa-solid fa-cubes"></i>               = web development
+<i class="fa-regular fa-newspaper"></i>         = content editing
