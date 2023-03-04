@@ -21,39 +21,18 @@ img {
   max-width: 100%;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  line-height: 1.5;
-  color: #505050;
+.main {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  .main {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 900;
-  color: #ffffff;
-}
-
-h1 {
-  font-size: 40px;
-}
-
-p {
-  line-height: 1.5;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-ul {
-  list-style: none;
-}
-
-.banner .section {
+.main, .banner .section {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -66,6 +45,94 @@ ul {
   padding: 8px 30px;
   display: inline-block;
   border-radius: 5px;
+}
+
+.main .sub-header {
+  position: relative;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.main .sub-header h2 {
+  margin-bottom: 13px;
+}
+.main .sub-header p::after {
+  content: "";
+  position: absolute;
+  background-color: #37a0f3;
+  height: 3px;
+  width: 140px;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+  .main .sub-header {
+    width: 90%;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  line-height: 1.7;
+  color: #505050;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: 900;
+  color: #494949;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 40px;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-33 {
+  width: 33.333%;
+}
+
+@media (max-width: 768px) {
+  .w-40 {
+    width: 100%;
+  }
+  .w-60 {
+    width: 100%;
+  }
+  .w-33 {
+    width: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
 }
 
 .banner {
@@ -103,7 +170,7 @@ ul {
     margin-right: 5px !important;
   }
 }
-.banner h2 {
+.banner h4, .banner h2 {
   color: #ffffff;
 }
 .banner .header {
@@ -121,6 +188,39 @@ ul {
   .banner .nav-bar {
     flex-direction: column;
   }
+}
+.main {
+  position: relative;
+}
+.main .content {
+  margin: 100px 0;
+}
+.main .content .inner {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .main .content .inner {
+    flex-direction: column;
+  }
+}
+.main .content .img {
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position: 50% 53%;
+}
+.main .content .coast {
+  background-image: url(../images/coast.jpg);
+}
+.main .content .island {
+  background-image: url(../images/island.jpg);
+}
+.main .content .balloon {
+  background-image: url(../images/balloon.jpg);
+}
+.main .content .mountain {
+  background-image: url(../images/mountain.jpg);
 }
 
 /*# sourceMappingURL=main.css.map */

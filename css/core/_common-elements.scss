@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
 @use "sass:math";
 
 body {
@@ -8,22 +9,47 @@ body {
   color: var.$text-color-base;
 }
 
-h1,
 h2,
 h3,
 h4 {
   font-weight: var.$font-weight-bold;
-  color: var.$text-color-header;
+  color: var.$text-color-primary;
 }
-
 h1{
+  color: var.$text-color-header;
   font-size: var.$font-size-header;
 }
 
 p{
   line-height: var.$line-height-base;
+  font-size: var.$font-size-base;
 }
 
+.w-100{
+  width: 100%;
+}
+.w-40{
+  width: 40%;
+}
+.w-60{
+  width: 60%;
+}
+.w-33{
+  width: 33.333%;
+}
+
+@include mix.tablet-styles{
+
+  .w-40{
+    width: 100%;
+  }
+  .w-60{
+    width: 100%;
+  }
+  .w-33{
+    width: 100%;
+  }
+}
 
 a{
   text-decoration: none;

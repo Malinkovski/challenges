@@ -53,8 +53,7 @@
   }
 }
 
-
-%wrap{
+%wrap {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -72,11 +71,39 @@
   }
 }
 
-%btn{
+%btn {
   text-transform: uppercase;
   font-weight: var.$font-weight-bold;
   background-color: var.$button-color-base;
   padding: 8px 30px;
   display: inline-block;
   border-radius: 5px;
+}
+
+%sub-header {
+  position: relative;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  h2 {
+    margin-bottom: 13px;
+  }
+
+  p::after {
+    content: "";
+    position: absolute;
+    background-color: var.$button-color-base;
+    height: 3px;
+    width: 140px;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include tablet-styles {
+    width: 90%;
+    padding-left: math.div(var.$gutter-base, 2);
+    padding-right: math.div(var.$gutter-base, 2);
+  }
 }

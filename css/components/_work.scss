@@ -1,0 +1,41 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+.main {
+  position: relative;
+  @extend %wrap;
+  @extend %section;
+  .sub-header {
+    @extend %sub-header;
+  }
+
+  .content {
+    margin: 100px 0;
+    .inner {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      @include mix.tablet-styles {
+        flex-direction: column;
+      }
+    }
+    .img {
+      height: 240px;
+      background-repeat: no-repeat;
+      background-position: 50% 53%;
+    }
+    .coast {
+      background-image: url(../images/coast.jpg);
+    }
+    .island {
+      background-image: url(../images/island.jpg);
+    }
+    .balloon {
+      background-image: url(../images/balloon.jpg);
+    }
+    .mountain {
+      background-image: url(../images/mountain.jpg);
+    }
+  }
+}
