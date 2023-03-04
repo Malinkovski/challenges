@@ -1,0 +1,12 @@
+//social-icons
+<i class="fa-brands fa-dribbble"></i>   	= dribbble
+<i class="fa-brands fa-facebook-f"></i> 	= facebook
+<i class="fa-brands fa-linkedin-in"></i>	= linkedin
+<i class="fa-brands fa-twitter"></i>		= twitter
+<i class="fa-brands fa-pinterest-p"></i> 	= printerest
+
+//fixed bottom-right-button
+<i class="fa-solid fa-chevron-up"></i>		= chevron-up
+
+//burger menu
+<i class="fa-solid fa-bars"></i>            = bars

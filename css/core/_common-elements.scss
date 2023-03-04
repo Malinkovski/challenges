@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-normal;
+  line-height: var.$line-height-base;
+  color: var.$text-color-primary;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  font-weight: var.$font-weight-bold;
+  color: var.$text-color-base;
+}
+
+p{
+  margin: 12px 0;
+}
+span{
+  color: var.$text-color-secondary;
+}
+
+a{
+  text-decoration: none;
+  color: var.$text-color-secondary;
+}
+
+ul{
+  list-style: none;
+
+}
+
+.social-icons{
+  border: var.$background-color-tertiary 2px solid;
+  border-radius: 100%;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  /* background-color: var.$background-color-tertiary; */
+}
