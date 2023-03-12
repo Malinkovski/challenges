@@ -1,0 +1,293 @@
+/*
+1. darkblue - rgba(39, 40, 51, 1)
+2. (за дивовите со контент)
+darkblue opacity  - rgba(39, 40, 51, .85)
+3. red - #e44c65
+4. blue - rgb(93, 93, 238)
+5.green - rgb(45, 212, 81)
+6.(позадинска боја за кружните иконки)
+lightwhite - rgba(255, 255, 255, .1)
+*/
+
+/* CSS RESETS */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  color: #fff;
+  background-color: #272833;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+/* CSS RESETS */
+
+/* General styles */
+h1 {
+  font-size: 50px;
+}
+h2 {
+  font-size: 35px !important;
+}
+h3 {
+  font-size: 24px !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.arrow i {
+  color: #bebec1;
+  font-size: 40px;
+  margin: 50%;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.v-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.w-33 {
+  width: 33.333%;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.btn {
+  border: #fff solid 1px;
+  border-radius: 6px;
+  padding: 20px 33px;
+  background-color: #0000003d;
+  display: inline-block;
+}
+.btn:hover {
+  border-color: #4287f5;
+}
+
+/* ====SECTION-BANNER====== */
+
+.section-banner {
+  height: 100vh;
+  position: relative;
+  z-index: 3;
+}
+.section-banner h2 {
+  font-weight: 100;
+}
+.navigation ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin-right: 3%;
+}
+.navigation li {
+  float: left;
+  margin: 20px 11px;
+  padding: 10px 12px;
+}
+.navigation a {
+  font-size: 18px;
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.navigation .fr li:last-child {
+  background-color: #e44c65;
+  border-radius: 8px;
+}
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header > * {
+  text-align: right;
+  margin: 20px;
+}
+.arrow {
+  position: absolute;
+  bottom: 5px;
+  right: 50%;
+}
+
+/* MAIN SECTION */
+
+.section-main h2 {
+  font-size: 30px;
+}
+.section-main h3 {
+  margin: 20px;
+}
+.sub-section {
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(80%);
+  background-attachment: fixed;
+}
+.img-1 {
+  background-image: url(../images/picture1.jpg);
+}
+.img-2 {
+  background-image: url(../images/picture2.jpeg);
+}
+.img-3 {
+  background-image: url(../images/picture3.jpg);
+}
+.container-bottom {
+  min-height: 50%;
+  border-top: #e44c65 solid 7px;
+  position: absolute;
+  bottom: 0;
+  font-size: 20px;
+  /* padding: 10% 70px 80px 80px; */
+  background-color: rgba(39, 40, 51, 0.85);
+}
+.container-bottom > * {
+  padding: 9% 3% 5% 3%;
+}
+.container-bottom h2 {
+  padding-bottom: 25px;
+}
+.conteiner-sides {
+  font-size: 18px;
+  background-color: rgba(39, 40, 51, 0.85);
+  position: absolute;
+  width: 37%;
+  height: 100%;
+}
+
+.container-right {
+  border-left: #5d5dee solid 7px;
+  right: 0;
+}
+
+.space-around * {
+  margin: 60px 65px 0px;
+}
+.container-left {
+  border-right: solid 7px rgb(45, 212, 81);
+  left: 0;
+}
+
+/* NAVIGATION SECTION */
+.social-section {
+  text-align: center;
+}
+.social-head {
+  padding: 40px 0px;
+}
+.social-head * {
+  margin: 20px;
+}
+.social-main > div {
+  padding: 40px 70px;
+}
+.social-main > div > * {
+  padding: 15px;
+  font-size: 17px;
+}
+.social-main i {
+  background-color: #3d3e48;
+  border-radius: 100%;
+  padding: 30px;
+  font-size: 50px;
+}
+
+.social-main div:nth-child(2) {
+  border-top: #e44c65 2px solid;
+}
+.social-main div:nth-child(3n + 4) {
+  clear: both;
+}
+
+.social-foot {
+  background-color: #e44c65;
+}
+
+input[type="button"] {
+  background-color: #fff;
+  border-radius: 5px;
+  color: #e44c65;
+  border: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+input[type="email"] {
+  background-color: #e44c65;
+  border-radius: 5px;
+  color: #fff;
+  width: 30%;
+  border: #fff 1px solid;
+  margin-left: 8px;
+  opacity: 0.5;
+}
+::placeholder {
+  color: #fff;
+  opacity: 0.5;
+}
+input[type="email"]:hover {
+  border-color: #4287f5;
+}
+
+form > * {
+  padding: 15px 30px;
+  font-size: 15px;
+  outline: none;
+}
+
+/* FOOTER SECTION */
+
+.section-footer {
+  text-align: center;
+  padding: 70px;
+}
+.social-footer-nav {
+  text-align: center;
+}
+
+.social-footer-nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.social-footer-nav li {
+  display: inline-block;
+  padding: 20px 13px;
+}
+.social-footer-nav a {
+  font-size: 40px;
+}
+
+.section-footer p a {
+  border-bottom: dotted #fff 1px;
+}
