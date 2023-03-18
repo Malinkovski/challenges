@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <link rel="stylesheet" href=".//assests/style.css" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <title>Challenge07-Bootstrap1</title>
+  </head>
+  <body data-spy="scroll">
+    <!-- *HEADER-SECTION -->
+    <section id="home" class="vh-100 overflow-hidden">
+      <!-- Nav-bar -->
+      <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand text-uppercase" href="#"> blogger </a>
+
+        <!-- Navbar-button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-label="navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#create">Create</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#share">Share</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- header-background-image -->
+      <div
+        class="bg-image bg-dark d-flex align-items-center justify-content-center h-100"
+      >
+        <!-- Header -->
+        <div class="container-md">
+          <div class="row text-white">
+            <div class="col-md-7 d-none d-md-block">
+              <h2>
+                Build <span class="text-danger">social profiles</span> and gain
+                revenue and
+                <span class="text-danger">profits</span>
+              </h2>
+              <ul class="fa-ul pl-2 pr-5">
+                <li class="pl-2 mb-3">
+                  <span class="fa-li mt-1"
+                    ><i class="fas fa-check mr-2 check c-white"></i
+                  ></span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum laudantium eum esse voluptate vitae modi corrupti
+                  dignissimos.
+                </li>
+                <li class="pl-2 mb-3">
+                  <span class="fa-li mt-1"
+                    ><i class="fas fa-check mr-2 check c-white"></i
+                  ></span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum laudantium eum esse voluptate vitae modi corrupti
+                  dignissimos.
+                </li>
+                <li class="pl-2 mb-3">
+                  <span class="fa-li mt-1"
+                    ><i class="fas fa-check mr-2 check c-white"></i
+                  ></span>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolorum laudantium eum esse voluptate vitae modi corrupti
+                  dignissimos.
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-5">
+              <!-- Login-form -->
+              <div class="bg-purple p-3 pb-4 text-center">
+                <h3 class="text-capitalize">sign up today</h3>
+                <p>Please fill out this form to register</p>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      placeholder="Enter username"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Enter email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="confirm-password"
+                      placeholder="Confirm Password"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="text-white btn btn-block border-white"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *MAIN-SECTION -->
+    <section class="container-fluid">
+      <!-- sub-heading-1 -->
+      <div
+        id="explore"
+        class="row text-center text-white bg-dark justify-content-center"
+      >
+        <div class="col-11 p-4">
+          <h2>Explore</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            dolor, odit quasi quas et minima quidem veniam illo porro atque,
+            iusto hic ea optio ipsam ullam ut fuga labore distinctio dignissimos
+            mollitia esse laboriosam praesentium sint aut? Qui, similique
+            labore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quaerat laborum corporis repellendus sunt assumenda! Magnam.
+          </p>
+          <a class="btn border-white text-white text-capitalize">
+            find out more
+          </a>
+        </div>
+      </div>
+      <!-- main-content-1 -->
+      <div class="row align-items-center p-3 p-md-5">
+        <div class="col-md-6 d-flex px-sm-5 justify-content-center">
+          <img
+            class="rounded-circle"
+            src="./assests/images/explore-section11.jpg"
+            alt="road"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-capitalize">explore & connect</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            voluptatem vel minus, nisi, facilis cupiditate nulla accusantium
+            magnam quis eos sequi perspiciatis. Necessitatibus nemo laboriosam,
+            voluptatem quae neque voluptatibus aut?
+          </p>
+          <ul class="fa-ul pl-3">
+            <li class="pl-4 mb-3">
+              <span class="fa-li mt-1"
+                ><i class="fas fa-check mr-2 check c-black"></i
+              ></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laudantium eum.
+            </li>
+            <li class="pl-4 mb-3">
+              <span class="fa-li mt-1"
+                ><i class="fas fa-check mr-2 check c-black"></i
+              ></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laudantium eum.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- sub-heading-2 -->
+      <div
+        id="create"
+        class="row text-center text-white bg-purple justify-content-center"
+      >
+        <div class="col-11 p-4">
+          <h2>Create</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            dolor, odit quasi quas et minima quidem veniam illo porro atque,
+            iusto hic ea optio ipsam ullam ut fuga labore distinctio dignissimos
+            mollitia esse laboriosam praesentium sint aut? Qui, similique
+            labore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quaerat laborum corporis repellendus sunt assumenda! Magnam.
+          </p>
+          <a class="btn border-white text-white text-capitalize">
+            find out more
+          </a>
+        </div>
+      </div>
+      <!-- main-content-2 -->
+      <div class="row align-items-center p-3 p-md-5 text-white bg-dark">
+        <div class="col-md-6 order-2 d-flex justify-content-center">
+          <img
+            class="rounded-circle"
+            src="./assests/images/create-section11.jpg"
+            alt="road"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-capitalize">Create your passion</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            voluptatem vel minus, nisi, facilis cupiditate nulla accusantium
+            magnam quis eos sequi perspiciatis. Necessitatibus nemo laboriosam,
+            voluptatem quae neque voluptatibus aut?
+          </p>
+          <ul class="fa-ul pl-3">
+            <li class="pl-4 mb-3">
+              <span class="fa-li mt-1"
+                ><i class="fas fa-check mr-2 check c-white"></i
+              ></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laudantium eum.
+            </li>
+            <li class="pl-4 mb-3">
+              <span class="fa-li mt-1"
+                ><i class="fas fa-check mr-2 check c-white"></i
+              ></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laudantium eum.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- sub-heading-3 -->
+      <div
+        id="share"
+        class="row text-center text-white bg-purple justify-content-center"
+      >
+        <div class="col-11 p-4">
+          <h2>Share</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+            dolor, odit quasi quas et minima quidem veniam illo porro atque,
+            iusto hic ea optio ipsam ullam ut fuga labore distinctio dignissimos
+            mollitia esse laboriosam praesentium sint aut? Qui, similique
+            labore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Quaerat laborum corporis repellendus sunt assumenda! Magnam.
+          </p>
+          <a class="btn border-white text-white text-capitalize">
+            find out more
+          </a>
+        </div>
+      </div>
+      <!-- main-content-3 -->
+      <div class="row align-items-center p-3 p-md-5">
+        <div class="col-md-6 d-flex justify-content-center">
+          <img
+            class="rounded-circle"
+            src="./assests/images/share-section11.jpg"
+            alt="road"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-capitalize">share what you create</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            voluptatem vel minus, nisi, facilis cupiditate nulla accusantium
+            magnam quis eos sequi perspiciatis. Necessitatibus nemo laboriosam,
+            voluptatem quae neque voluptatibus aut?
+          </p>
+          <ul class="fa-ul pl-3">
+            <li class="pl-4 mb-3">
+              <span class="fa-li mt-1"
+                ><i class="fas fa-check mr-2 check c-black"></i
+              ></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laudantium eum.
+            </li>
+            <li class="pl-4 mb-3">
+              <span class="fa-li mt-1"
+                ><i class="fas fa-check mr-2 check c-black"></i
+              ></span>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              laudantium eum.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- *FOOTER-SECTION -->
+    <section class="container-fluid">
+      <div
+        id="explore"
+        class="row text-center text-white bg-dark justify-content-center"
+      >
+        <div class="col-11 p-4">
+          <h2 class="text-uppercase">blogger</h2>
+          <p>Copyright &copy; 2017</p>
+          <a class="btn btn-primary text-capitalize"> contact us </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

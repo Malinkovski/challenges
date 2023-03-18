@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.bg-image {
+  background-image: url("./images/home.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-purple {
+  background-color: #4900d5;
+}
+
+.check {
+  border-radius: 4px;
+  padding: 3px;
+  font-size: 20px;
+}
+.c-white {
+  background-color: #ffffff;
+  color: #4e86ff;
+}
+.c-black {
+  background-color: #181818;
+  color: #ffffff;
+}
