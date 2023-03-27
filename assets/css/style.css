@@ -34,8 +34,8 @@ img {
 .h-700 {
   height: 700px;
 }
-.h-500{
-    height: 500px;
+.h-500 {
+  height: 500px;
 }
 .bg {
   background-position: 48%;
@@ -43,7 +43,7 @@ img {
   background-size: cover;
 }
 .bg-position-top {
-    background-position: top !important;
+  background-position: top !important;
 }
 .bg-paralax {
   background-attachment: fixed;
@@ -56,8 +56,8 @@ img {
 .bg-black {
   background-color: #000000;
 }
-.bg-darker{
-    background-color: #293036;
+.bg-darker {
+  background-color: #293036;
 }
 .bg-1 {
   background-image: url("../Images/image1.jpg");
@@ -120,7 +120,31 @@ i {
 
 /* ==== ABOUT US ===== */
 
-.top-image{
-    top: -100px;
-    width: 80%;
+.top-image {
+  top: -100px;
+  width: 80%;
+}
+
+/* ==== CONTACT ===== */
+
+.btn-danger:hover {
+  background-color: #dc3545 !important;
+  color: #fff;
+}
+
+.btn-custom {
+  background-color: #fff;
+  color: #dc3545;
+  border: 2px solid #dc3545;
+}
+
+.btn-custom:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
 }

@@ -34,8 +34,8 @@ Use the built-in continuous integration in GitLab.
 
 ## Description
 
-Challenge 8 Bootstrap 2, using Bootstrap 4.6.0 to design most of the elements. 
+Challenge 8 Bootstrap 2, using Bootstrap 4.6.0 to design most of the elements, also added a couple of custom CSS elements. 
 
 ## Project status
 
-Early stage, starter-files.
+Finished.
