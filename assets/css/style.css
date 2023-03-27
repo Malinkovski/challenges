@@ -56,6 +56,9 @@ img {
 .bg-black {
   background-color: #000000;
 }
+.bg-darker{
+    background-color: #293036;
+}
 .bg-1 {
   background-image: url("../Images/image1.jpg");
 }
