@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge08-Bootstrap2</title>
+    <!-- Font-awesome 6.3.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- Bootstrap 4.6.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER-SECTION -->
+    <section>
+      <!--  ??  <div class="top-white-fix position-fixed border-bottom"></div> -->
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+        <a class="navbar-brand text-uppercase text-white-50" href="#"
+          >Glozzom</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navigation-bar"
+          aria-controls="navigation-bar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <hr class="nav-devider" />
+        <!-- hr navbar devider -->
+        <div class="collapse navbar-collapse" id="navigation-bar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="dropdown-divider border-0 my-3"></div>
+            </li>
+            <li class="nav-item border-offset-left active">
+              <a class="nav-link text-uppercase" href="./home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-uppercase" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Carousel -->
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active bg bg-1 h-700">
+            <div class="carousel-caption text-right d-none d-md-block">
+              <h2 class="text-capitalize">heading one</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                nemo earum aliquam quasi ipsum est illo sequi vel assumenda!
+              </p>
+              <a href="#signup" class="btn btn-danger btn-group-lg text-capitalize">
+                sign up now
+              </a>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item bg bg-2 h-700">
+            <div class="carousel-caption d-none d-md-block">
+              <h2 class="text-capitalize">heading two</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                nemo earum aliquam quasi ipsum est illo sequi vel assumenda!
+              </p>
+              <button class="btn btn-primary btn-group-lg text-capitalize">
+                learn more
+              </button>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item bg bg-3 h-700">
+            <div class="carousel-caption text-left d-none d-md-block">
+              <h2 class="text-capitalize">heading three</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod
+                nemo earum aliquam quasi ipsum est illo sequi vel assumenda!
+              </p>
+              <button class="btn btn-primary btn-group-lg text-capitalize">
+                learn more
+              </button>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <!-- MAIN SECTION -->
+    <section>
+      <!-- 3-col-content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 p-4 text-center">
+            <i class="fa-solid fa-gear"></i>
+            <h4>Turning gears</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+              quisquam?
+            </p>
+          </div>
+          <div class="col-md-4 p-4 text-center">
+            <i class="fa-solid fa-cloud"></i>
+            <h4>Sending data</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+              quisquam?
+            </p>
+          </div>
+          <div class="col-md-4 p-4 text-center">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <h4>Making money</h4>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+              quisquam?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- sub-header -->
+      <div class="bg bg-paralax bg-4">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center text-light p-4">
+              <h3>Are you ready to get started?</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Exercitationem, dicta corrupti? Sed fugiat quas eius.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center py-4">
+          <div class="col-md-7">
+            <h2>Lorem ipsum</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium officia asperiores maxime nisi laboriosam minus
+              voluptate in facere nobis, dolorum eligendi autem reiciendis esse
+              quidem suscipit optio recusandae accusamus minima repellendus
+              saepe. Quae, accusantium pariatur ipsum necessitatibus dignissimos
+              possimus obcaecati beatae quisquam a porro officia, dolore.
+              <button
+                class="btn btn-light border-danger d-block text-danger my-3"
+              >
+                Learn more
+              </button>
+            </p>
+          </div>
+          <div class="col-md-5 align-content-center">
+            <img src="./assets/Images/laptop.png" alt="laptop" />
+          </div>
+        </div>
+      </div>
+      <!-- video-sub-header: *See what we do* -->
+      <div class="bg bg-paralax bg-darken bg-5">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col text-center text-light p-4">
+              <!-- Modal button -->
+              <button
+                type="button"
+                class="btn text-white"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                <i class="fa-sharp fa-solid fa-play"></i>
+                <h3>See what we do</h3>
+              </button>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body px-0 mx-0">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <div
+                              class="embed-responsive embed-responsive-16by9"
+                            >
+                              <iframe
+                                class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/Ga149fpEh7M?autoplay=1"
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal-END -->
+
+      <!-- Photo Gallery -->
+      <div class="container text-center my-4">
+        <h2>Photo Gallery</h2>
+        <p>Check out our photos.</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-6 pb-4">
+            <img src="./assets/Images/1.png" alt="office-example" />
+          </div>
+          <div class="col-md-4 col-sm-6 pb-4">
+            <img src="./assets/Images/2.png" alt="office-example" />
+          </div>
+          <div class="col-md-4 col-sm-6 pb-4">
+            <img src="./assets/Images/3.png" alt="office-example" />
+          </div>
+          <div class="col-md-4 col-sm-6 pb-4">
+            <img src="./assets/Images/4.png" alt="office-example" />
+          </div>
+          <div class="col-md-4 col-sm-6 pb-4">
+            <img src="./assets/Images/5.png" alt="office-example" />
+          </div>
+          <div class="col-md-4 col-sm-6 pb-4">
+            <img src="./assets/Images/6.png" alt="office-example" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-section -->
+    <section id="signup">
+      <div class="bg-dark">
+        <div class="container">
+            <div class="row">
+              <div class="px-5 col text-center text-light p-4">
+                <h3>Sign Up for our news letter</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Exercitationem, dicta corrupti? Sed fugiat quas eius. Lorem
+                  ipsum dolor sit amet. Sed fugiat.
+                </p>
+                <form class="px-sm-5 row form-inline justify-content-center justify-content-md-start">
+                  <div class="py-sm-2 col-md-4 col-sm-12 form-group">
+                    <label for="inputName" class="sr-only">Name</label>
+                    <input type="text" class="w-100 form-control" id="inputName" placeholder="Enter Name" />
+                  </div>
+                  <div class="py-sm-2 col-md-4 col-sm-12 form-group">
+                    <label for="inputEmail" class="sr-only">Email</label>
+                    <input type="email" class="w-100 form-control" id="inputEmail" placeholder="Enter Email" />
+                  </div>
+                  <div class="py-sm-2 col-md-4 col-sm-12 d-flex justify-content-center justify-content-md-start">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="text-center bg-black py-3">
+        <span class="text-white">Copyright 2018 &copy; Glozzom</span>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
