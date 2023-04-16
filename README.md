@@ -34,9 +34,9 @@ Use the built-in continuous integration in GitLab.
 
 ## Description
 
-Challenge 9 Javascript 1 Variables, functions, loops, 
+Challenge 9 Javascript 1 using Variables, functions, loops and arrays to complete the tasks 1, 2 and 3.By clicking the 'Start' variables are entered through a window prompt and the results are shown in the console log. All functions are written in the task.js file and called through the 'Start' buttons from each task section on the page.
 
 ## Project status
 
-Starter files.
+Finished.
 
