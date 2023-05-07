@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 12px;
+      }
+    </style>
+    <table>
+      <tbody></tbody>
+    </table>
+    <script>
+      const voters = [
+        ["Antonio", true, 5],
+        ["Marija", false],
+        ["Darko", true, 3],
+      ];
+
+      const foundArrayElement = (name) => voters.find((person) => person[0] === name);
+
+      const createRow = (name, voteStatus, grade) => {
+        const tr = document.createElement("tr");
+        const nameTd = document.createElement("td");
+        nameTd.innerText = name;
+        tr.appendChild(nameTd);
+
+        const voteTd = document.createElement("td");
+        voteTd.innerText = voteStatus ? "Voted!" : "Didn't vote.";
+        tr.appendChild(voteTd);
+
+        if (typeof grade !== "undefined") {
+          const gradeTd = document.createElement("td");
+          gradeTd.innerText = grade;
+          tr.appendChild(gradeTd);
+        } else {
+          voteTd.colSpan = 2;
+        }
+        return tr;
+      }
+
+      const tbody = document.querySelector("tbody");
+
+      const name = prompt("Enter a name: ");
+      const person = foundArrayElement(name);
+
+      if (person) {
+        tbody.appendChild(createRow(person[0],person[1],person[2]));
+      } else {
+        alert("Person not found.");
+      }
+    </script>
+  </body>
+</html>
