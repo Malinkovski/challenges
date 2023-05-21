@@ -1,0 +1,99 @@
+/* CSS RESETS */
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+/* CSS RESETS */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  background-image: url(../images/img.jpeg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% 150%;
+  color: white;
+  padding: 60px 0;
+  height: 100vh;
+}
+h1 {
+  padding: 20px;
+}
+.backspace {
+  justify-content: flex-end !important;
+}
+
+#keyboard {
+  display: inline-block;
+  padding: 80px 20px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.row {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#keyboard button {
+  color: white;
+  border: black solid 3px;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 8px 30px;
+  min-width: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+#keyboard button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: ease-in-out 0.1s;
+}
+
+.clicked {
+  background-color: rgb(43, 41, 41) !important;
+}
+
+.space {
+  width: 250px;
+}
+
+#output {
+  min-height: 35px;
+  text-transform: lowercase;
+  font-size: 28px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  word-wrap: break-word;
+}
+#output:first-letter {
+  text-transform: uppercase;
+}
