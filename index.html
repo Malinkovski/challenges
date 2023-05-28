@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Library</title>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 8px;
+      }
+      .progress-bar {
+        width: 200px;
+        height: 30px;
+        background-color: lightgray;
+      }
+      .progress-bar-fill {
+        color: white;
+        text-align: center;
+        display: flex;
+        height: 100%;
+        background-color: green;
+        align-items: center;
+        justify-content: center;
+    }
+      .read {
+        color: green;
+      }
+      .not-read {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="book-list"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Max Pages</th>
+          <th>On Page</th>
+          <th>Progress</th>
+        </tr>
+      </thead>
+      <tbody id="book-table"></tbody>
+    </table>
+    <h2>Add New Book</h2>
+    <form id="book-form">
+      <input type="text" id="book-title-input" placeholder="Book Title" />
+      <input type="text" id="book-author-input" placeholder="Book Author" />
+      <input type="number" id="on-page-input" placeholder="Current page On.." />
+      <input type="number" id="max-pages-input" placeholder="Book Max Pages" />
+      <button type="submit" id="submit-button">Add to List</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
