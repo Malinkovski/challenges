@@ -1,0 +1,22 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+}
+.exercise {
+  margin-bottom: 80px;
+}
+button {
+  margin-bottom: 20px;
+}
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+form button {
+  width: 30%;
+  padding: 5px;
+  margin-top: 10px;
+}
