@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bikes</title>
+    <meta name="keywords" content="html,css,javaScript" />
+    <meta name="description" content="Bikes" />
+    <meta name="author" content="" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- Latest compiled and minified BOOTSTRAP CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Font-awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- start here -->
+    <!-- Navbar -->
+    <section id="navbar-section">
+      <div id="navbar" class="">
+        <div class="inner-navbar">
+          <div>
+            <img src="./img/logo.png" alt="logo" />
+          </div>
+          <div>
+            <ul class="navbar-options">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">BIKES</a></li>
+              <li><a href="#">GEAR</a></li>
+              <li><a href="#">PARTS</a></li>
+              <li><a href="#">TIRES</a></li>
+              <li><a href="#">SERVICE-INFO</a></li>
+              <li><a href="#">CATALOGUES</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="icons">
+              <div>
+                <a href="#" title="seach"
+                  ><i class="fas fa-shopping-bag"></i
+                ></a>
+              </div>
+              <div>
+                <a href="#" title="cart"><i class="fas fa-search"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="title" class="border-bottom border-top">
+      <div class="title border-top border-bottom">
+        <h1>Bikes</h1>
+      </div>
+    </section>
+    <section id="main-section">
+      <div id="side-navbar">
+        <div>
+          <div class="sidebar border-bottom">
+            <h3>Filter by:</h3>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input
+                  id="option-all"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="all"
+                  checked
+                />
+                <label for="option-all"
+                  >Show all<span class="badge">0</span></label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar border-bottom">
+            <h3>Gender</h3>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input
+                  id="option-m"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="male"
+                />
+                <label for="option-m">Male<span class="badge">0</span></label>
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option-f"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="female"
+                />
+                <label for="option-f">Female<span class="badge">0</span></label>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar border-bottom">
+            <h3>Brand</h3>
+            <ul class="filter-list">
+              <li class="filter-option">
+                <input
+                  id="option1"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="LE GRAND BIKES"
+                />
+                <label for="option1"
+                  >LE GRAND BIKES<span class="badge">0</span></label
+                >
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option2"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="KROSS"
+                />
+                <label for="option2">KROSS<span class="badge">0</span></label>
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option3"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="EXPLORER"
+                />
+                <label for="option3"
+                  >EXPLORER<span class="badge">0</span></label
+                >
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option4"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="VISITOR"
+                />
+                <label for="option4">VISITOR<span class="badge">0</span></label>
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option5"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="PONY"
+                />
+                <label for="option5">PONY<span class="badge">0</span></label>
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option6"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="FORCE"
+                />
+                <label for="option6">FORCE<span class="badge">0</span></label>
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option7"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="E-BIKES"
+                />
+                <label for="option7">E-BIKES<span class="badge">0</span></label>
+              </li>
+              <li class="filter-option">
+                <input
+                  id="option8"
+                  class="filter"
+                  type="radio"
+                  name="filter"
+                  value="IDEAL"
+                />
+                <label for="option8">IDEAL<span class="badge">0</span></label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="bikes">
+        <!-- 
+        <div class="card">
+          <div class="inner-card">
+            <div class="card-image">
+              <img src="./img/2.png" alt="Bike" />
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">Product Title</h3>
+              <p class="card-price">000.000 $</p>
+            </div>
+          </div>
+        </div>
+ -->
+      </div>
+    </section>
+    <section id="footer-section">
+      <div class="inner-footer">
+        <div class="social">
+          <!--  -->
+          <h3>Social share</h3>
+          <ul class="filter-list">
+            <a href="#"
+              ><li><i class="fab fa-facebook-f"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fab fa-instagram"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fab fa-twitter"></i></li
+            ></a>
+            <a href="#"
+              ><li><i class="fab fa-linkedin-in"></i></li
+            ></a>
+          </ul>
+        </div>
+        <div class="event-info border-left">
+          <!--  -->
+          <h3>Event info</h3>
+          <ul class="filter-list">
+            <li><a href="#">Enter Now</a></li>
+            <li><a href="#">Event Info</a></li>
+            <li><a href="#">Course Maps</a></li>
+            <li><a href="#">Race Pack</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Am I Regustered?</a></li>
+          </ul>
+        </div>
+        <div class="Registration border-left">
+          <!--  -->
+          <h3>Registration</h3>
+          <ul class="filter-list">
+            <li><a href="#">Volunteers</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Service Plus</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="schedule border-left">
+          <!--  -->
+          <h3>Schedule</h3>
+          <ul class="filter-list">
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Results</a></li>
+            <li><a href="#">Velunteers</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <!--     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
