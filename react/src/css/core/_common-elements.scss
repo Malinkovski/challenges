@@ -1,0 +1,65 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  font-family: var.$font-family-base;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-base;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: math.div(var.$gutter-base, 2);
+  line-height: var.$line-height-small;
+  font-weight: var.$font-weight-bold;
+}
+
+h1 {
+  font-size: var.$heading-size-bigger;
+
+  @media (max-width: 425px) { font-size: var.$heading-size-big; }
+}
+
+h2 {
+  font-size: var.$heading-size-big;
+
+  @media (max-width: 425px) { font-size: var.$heading-size-small; }
+}
+
+h3 {
+  font-size: var.$heading-size-tiny;
+
+  @media (max-width: 425px) { font-size: var.$font-size-medium; }
+}
+
+.button{
+  background-color: var.$background-color-base;
+  padding: 10px;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: var.$text-color-base;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    color: var.$text-color-secondary;
+  }
+  text-transform: uppercase;
+}
+
+.wrapper{
+  @extend %wrap;
+}
+
+li{
+  list-style: none;
+}

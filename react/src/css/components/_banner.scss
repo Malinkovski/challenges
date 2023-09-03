@@ -1,0 +1,35 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+#header{
+    height: 100vh;
+    background-image: url("https://picsum.photos/seed/27/1980/1080");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrapper{
+        position: relative;
+    }
+    .heading{
+        color: var.$text-color-primary;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        @include mix.mobile-l-styles {
+            text-align: center;
+            width: 100%;
+          }
+    }
+    .button{
+        width: 165px;
+        @include mix.mobile-l-styles {
+            width: 100%;
+          }
+    }
+    h3{
+        font-weight: var.$font-weight-normal;
+    }
+}

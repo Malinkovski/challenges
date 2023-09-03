@@ -1,0 +1,19 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+#footer{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    a{
+        font-size: var.$font-size-medium;
+        color: var.$text-color-secondary;
+        font-family: var.$font-weight-bold;
+        &:hover{
+            color: var.$text-color-base;
+        }
+    }
+    ul{
+        text-align: center;
+    }
+}

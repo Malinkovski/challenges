@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#main-section {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+}
+@media (max-width: 768px) {
+  #main-section {
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+  }
+}
+
+.wrapper {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+@media (max-width: 999px) {
+  .wrapper {
+    width: 95%;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 0.9375rem;
+  line-height: 1;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3.75rem;
+}
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+
+h2 {
+  font-size: 2.75rem;
+}
+@media (max-width: 425px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.5625rem;
+}
+@media (max-width: 425px) {
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.button {
+  background-color: #FFF;
+  padding: 10px;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  text-transform: uppercase;
+}
+a:hover {
+  color: #de8560;
+}
+
+li {
+  list-style: none;
+}
+
+#header {
+  height: 100vh;
+  background-image: url("https://picsum.photos/seed/27/1980/1080");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#header .wrapper {
+  position: relative;
+}
+#header .heading {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-width: 425px) {
+  #header .heading {
+    text-align: center;
+    width: 100%;
+  }
+}
+#header .button {
+  width: 165px;
+}
+@media (max-width: 425px) {
+  #header .button {
+    width: 100%;
+  }
+}
+
+#main-section {
+  background-color: #f7f7f7;
+  /* TODO: cards/places */
+}
+#main-section .detailed-card {
+  margin: 50px 0;
+}
+#main-section .detailed-card .inner-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#main-section .detailed-card .inner-content .details {
+  width: 60%;
+  display: flex;
+}
+#main-section .detailed-card .inner-content .details h3 {
+  color: #de8560;
+}
+#main-section .detailed-card .inner-content .card-img {
+  border-radius: 50%;
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  #main-section .detailed-card .inner-content {
+    gap: 5px;
+  }
+}
+@media (max-width: 425px) {
+  #main-section .detailed-card .inner-content {
+    gap: 0px;
+    flex-direction: column;
+    width: 100%;
+  }
+  #main-section .detailed-card .inner-content .details {
+    width: 100%;
+  }
+}
+
+#footer {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+#footer a {
+  font-size: 1.25rem;
+  color: #de8560;
+  font-family: 900;
+}
+#footer a:hover {
+  color: #000;
+}
+#footer ul {
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
