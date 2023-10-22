@@ -1,0 +1,9 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: var.$font-size-medium;
+}

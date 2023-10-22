@@ -1,0 +1,122 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+body {
+  transition: 0.2s ease-in-out;
+  font-family: var.$font-family-base;
+  font-size: var.$font-size-base;
+  font-weight: var.$font-weight-base;
+  line-height: var.$line-height-base;
+  color: var.$text-color-base;
+  @extend %wrap;
+}
+
+
+h1,
+h2,
+h3 {
+  line-height: var.$line-height-small;
+  font-weight: var.$font-weight-bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: var.$heading-size-bigger;
+
+  @media (max-width: 425px) {
+    font-size: var.$heading-size-big;
+  }
+}
+
+h2 {
+  font-size: var.$heading-size-big;
+  @media (max-width: 425px) {
+    font-size: var.$heading-size-small;
+  }
+}
+
+h3 {
+  font-size: var.$heading-size-tiny;
+
+  @media (max-width: 425px) {
+    font-size: var.$font-size-medium;
+  }
+}
+
+button {
+  background-color: var.$button-color-primary;
+  padding: 10px 15px;
+  display: inline-block;
+  width: auto;
+  text-align: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-weight: var.$font-weight-bold;
+  color: var.$text-color-secondary;
+  transition: 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.003);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: none;
+  }
+}
+
+i {
+  font-size: var.$heading-size-big;
+  color: var.$text-color-primary;
+}
+
+.wrapper {
+  @extend %wrap;
+}
+.page-wrapper {
+  min-height: 78vh;
+}
+
+li {
+  list-style: none;
+}
+
+header,
+section {
+  border-bottom: 2px var.$background-color-secondary solid;
+  padding: 30px 0;
+}
+
+footer{
+  
+  padding: 30px 0;
+}
+
+.favorites > * {
+  margin-bottom: 15px;
+  img {
+    max-height: 250px;
+  }
+}
+
+.restaurants-details {
+  h4 {
+    text-align: center;
+    padding: 100px 40px;
+  }
+}
+
+.centered{
+  text-align: center;
+  padding: 100px 0;
+}
+
+.vh-80 {
+  min-height: 68vh;
+}

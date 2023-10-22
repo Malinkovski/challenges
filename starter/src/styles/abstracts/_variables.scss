@@ -1,0 +1,53 @@
+  @use 'sass:math';
+
+@function rem-calc($size) {
+  @return (math.div($size, 16)) * 1rem;
+}
+
+
+// Font settings
+$font-family-base:           'Montserrat', sans-serif;
+
+$font-size-small:            rem-calc(13);
+$font-size-base:             rem-calc(16);
+$font-size-medium:           rem-calc(20);
+$font-size-big:              rem-calc(24);
+
+$heading-size-tiny:          rem-calc(25);
+$heading-size-small:         rem-calc(28);
+$heading-size-big:           rem-calc(44);
+$heading-size-bigger:        rem-calc(60);
+
+$line-height-base:           1.5;
+$line-height-small:          1;
+
+$font-weight-normal:         400;
+$font-weight-bold:           900;
+$font-weight-base:           $font-weight-normal;
+
+// Size settings
+$gutter-base:                rem-calc(15);
+$border-radius:              4px;
+
+// Color settings
+$text-color-base:            #000000;
+$text-color-primary:         #de8560;
+$text-color-secondary:       #ffffff;
+
+$background-color-base:      #ffffff;
+$background-color-primary:   rgba(72, 41, 20, 0.5);
+$background-color-secondary: #ebebeb;
+
+$button-color-primary:       #cc6d44;
+$button-color-pri-bolder:    #de8560;
+$button-color-secondary:     #00a700;
+$button-color-sec-bolder:    #269726;
+
+// Dark theme
+$text-color-darkm-pri:      #ffffff;
+$text-color-darkm-sec:      #fc976f;
+$text-color-darkm-ter:      #0c0c0c;
+$background-color-darkm-pri:#161616;
+$background-color-darkm-sec:#1d1d1d;
+$background-color-darkm-ter:#2b2b2b;
+$button-color-darkm-pri:    #64a330;

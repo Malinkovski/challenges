@@ -1,0 +1,71 @@
+@use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .favorites {
+    transition: 0.2s ease-in-out;
+    &:hover {
+      transform: scale(110%);
+      transition: 0.2s ease-in-out;
+      i {
+        color: rgb(235, 107, 2) !important;
+      }
+    }
+  }
+  .header-buttons {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+/* SITE THEME */
+
+.theme-mode {
+  i {
+    transition: 0.2s ease-in-out;
+    font-size: 25px;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.15);
+    }
+  }
+  .theme-icon {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  .theme-icon-hidden {
+    opacity: 0;
+  }
+}
+
+.dark-theme {
+  background-color: rgb(22, 22, 22);
+  color: var.$text-color-darkm-pri;
+
+  .surprise button {
+    background-color: var.$button-color-darkm-pri !important;
+  }
+  button {
+    color: var.$text-color-darkm-ter;
+  }
+  .card-container {
+    background-color: var.$background-color-darkm-sec;
+  }
+  .card {
+    box-shadow: 1px 0px 11px 0px #302f2fa8;
+  }
+  section,
+  header {
+    border-color: var.$background-color-darkm-ter;
+  }
+  i,.restaurant-type {
+      color: var.$text-color-darkm-sec !important;
+    }
+
+}
